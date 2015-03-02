@@ -1,37 +1,63 @@
 <!DOCTYPE html>
-<html ng-app="gemStore">
-  <head>
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
-    <script type="text/javascript" src="angular.min.js"></script>
-    <script type="text/javascript" src="products.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-  </head>
-
-  <body ng-controller="StoreController as store">
-    <!--  Store Header  -->
-    <header>
-      <h1 class="text-center">Flatlander Crafted Gems</h1>
-      <h2 class="text-center">– an Angular store –</h2>
-      <h3>
-        <a class="btn btn-primary" href="gemStore.html">
-          Visit Store
-        </a>
-      </h3>
-    </header>
-
-    <!--  Products Container  -->
-    <div class="list-group">
-      <!--  Product Container  -->
-      <div class="list-group-item" ng-repeat="product in store.products">
-        <h3>{{product.name}} <em class="pull-right">{{product.price | currency}}</em></h3>
-
-        <!-- Image Gallery  -->
-        <product-gallery></product-gallery>
-
-        <!-- Product Tabs  -->
-        <product-tabs></product-tabs>
-      </div>
-
-    </div>
-  </body>
+<html>
+        <head>
+            <title>Andreo Sebastiani Angular</title>
+				<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link href = "css/bootstrap.min.css" rel = "stylesheet">
+                <link href = "css/styles.css" rel = "stylesheet">
+        </head>
+        <body>
+ 
+                <div class = "navbar navbar-default navbar-static-top">
+                        <div class = "container">
+                               
+                                <a href = "http://maseba01.github.io/Angular-js" class = "navbar-brand">Andreo Sebabstiani</a>
+                               
+                                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                                        <span class = "icon-bar"></span>
+                                        <span class = "icon-bar"></span>
+                                        <span class = "icon-bar"></span>
+                                </button>
+                               
+                                <div class = "collapse navbar-collapse navHeaderCollapse">
+                               
+                                        <ul class = "nav navbar-nav navbar-right">
+                                       
+                                                <li class = "active"><a href = "http://maseba01.github.io/Angular-js">Home</a></li>
+                                                <li class = "dropdown">
+                                                       
+                                                        <a href = "" class = "dropdown-toggle" data-toggle = "dropdown">Assignments<b class = "caret"></b></a>
+                                                        <ul class = "dropdown-menu">
+                                                                <li><a href = "Level1/level1.html">Level 1</a></li>
+                                                                <li><a href = "Level2/level2.html">Level 2</a></li>
+                                                                <li><a href = "Level3/level3.html">Level 3</a></li>
+                                                                <li><a href = "Level4/level4.html">Level 4</a></li>
+                                                                <li><a href = "Level5/level5.html">Level 5</a></li>																
+                                                        </ul>
+                                               
+                                                </li>
+                                       
+                                        </ul>
+                               
+                                </div>
+                               
+                        </div>
+                </div>
+ 
+                <div class = "container">
+               
+                        <div class = "jumbotron">
+                                <center><h1>Intro to Angular JS</h1>
+                                <p>The assignments are on the nav bar.</p>
+								<a href = "gemStore.html" class = "navbar-btn btn-primary btn">GemStore Site</a>
+                                
+                        </div>
+               
+                </div>
+ 
+                <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                <script src = "js/bootstrap.js"></script>
+               
+        </body>
 </html>
